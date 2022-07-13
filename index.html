@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +7,22 @@
     <title>Weather</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
 </head>
 <body>
+    <form action="#">
+        <input type="text" id="city-input" placeholder="Enter A City" autocomplete="off" required>
+        <button type="submit" class="material-symbols-outlined">search</button>
+    </form>
     <main>
-        <h1 id="name">Waterloo</h1>
-        <h2 id="desc">Partly Cloudy</h2>
-        <h2 id="temp">21°C</h2>
+        <h1 id="city"></h1>
+        <img src="#" id="icon">
+        <h2 id="desc"></h2>
+        <h2 id="temp"></h2>
     </main>
+    <nav>
+        <button id="temp-type-btn">°C</button>
+        <button id="theme-btn" class="material-symbols-outlined">light_mode</button>
+    </nav>
 </body>
 </html>
