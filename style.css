@@ -1,0 +1,24 @@
+:root {
+    --background: white;
+    --accent: black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+}
+
+main {
+    text-align: center;
+}
