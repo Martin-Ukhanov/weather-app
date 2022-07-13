@@ -1,6 +1,13 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root.light {
     --background: white;
     --accent: black;
+}
+
+:root.dark {
+    --background: black;
+    --accent: white;
 }
 
 *,
@@ -11,14 +18,63 @@
   margin: 0;
 }
 
+button {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
 body {
+    min-width: 400px;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 2rem;
+    color: var(--accent);
     background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    display: flex;
+    column-gap: 6px;
+}
+
+form input,
+form button {
+    padding: 6px;
+    font-family: inherit;
+    font-size: 100%;
+    color: inherit;
+    background-color: inherit;
+    border: 2px solid var(--accent);
+    border-radius: 4px;
+    outline: none;
+}
+
+form input {
+    width: 300px;
 }
 
 main {
     text-align: center;
+}
+
+nav {
+    position: absolute;
+    bottom: 0rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+#temp-type-btn,
+#theme-btn {
+    font-size: 3rem;
 }
