@@ -18,17 +18,8 @@
   margin: 0;
 }
 
-button {
-    background: none;
-    border: none;
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    cursor: pointer;
-}
-
 body {
-    min-width: 400px;
+    min-width: 300px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -38,6 +29,15 @@ body {
     color: var(--accent);
     background-color: var(--background);
     font-family: 'Poppins', sans-serif;
+}
+
+button {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
 }
 
 form {
